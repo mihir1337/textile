@@ -73,6 +73,14 @@
 		$(".overlay, .contact-modal").removeClass("active");
 	});
 
+	$(".payment-mod").on("click", function () {
+		$(".overlay, .payment-modal").addClass("active");
+	});
+
+	$(".overlay, .crossbars").on("click", function () {
+		$(".overlay, .payment-modal").removeClass("active");
+	});
+
 	// hamburger menu active 
 	$(".hamburger-menu-trigger").on("click", function () {
 		$(".overlay, .textile-innerpage-left").addClass("active");

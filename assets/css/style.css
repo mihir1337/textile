@@ -470,7 +470,8 @@ img {
 
 /* login modal css */
 .login-modal,
-.contact-modal {
+.contact-modal, 
+.payment-modal {
     width: 400px;
     position: fixed;
     background: #fff;
@@ -564,7 +565,8 @@ img {
 
 .login-modal.register-modal,
 .login-modal,
-.contact-modal {
+.contact-modal,
+.payment-modal {
     transform: scale(.5) translateX(-50%);
     opacity: 0;
     visibility: hidden;
@@ -574,7 +576,8 @@ img {
 
 .login-modal.register-modal.active,
 .login-modal.login-active,
-.contact-modal.active {
+.contact-modal.active,
+.payment-modal.active {
     transform: scale(1) translateX(-50%);
     visibility: visible;
     opacity: 1;
@@ -1339,4 +1342,48 @@ img {
 
 .textile-innerpage-left.active .crossbars {
     display: block;
+}
+
+/* payment modal css */
+
+.payment-modal {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.payment-modal i {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.payment-modal .callforhelp i {
+    display: inline-block;
+}
+
+.payment-modal .textile-innerpage-right {
+    padding: 0;
+    border: transparent;
+}
+
+.payment-modal .price-amount {
+    padding: 0;
+    background: transparent;
+    font-size: 14px;
+    border: 0px solid;
+    border-color: transparent;
+}
+
+.payment-modal .single-payment-method.bkash {
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+.payment-modal .payment-confirm-form {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.payment-modal .single-payment-method .content {
+    text-align: left;
 }
