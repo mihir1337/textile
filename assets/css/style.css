@@ -64,7 +64,7 @@ h2,
 h3,
 h4,
 h5,
-h6  {
+h6 {
     font-weight: 700;
 }
 
@@ -198,7 +198,8 @@ img {
     border-radius: 10px;
 }
 
-.single-form-group .nice-select .option {
+.single-form-group .nice-select .option,
+.company-info-form .nice-select .option {
     font-weight: 600;
     line-height: 34px;
     min-height: 35px;
@@ -227,11 +228,18 @@ img {
     width: 100%;
 }
 
-.single-form-group .nice-select.open .list li {
+.single-form-group .nice-select.open .list li,
+.company-info-form .nice-select.open .list li {
     color: #505050;
 }
 
-.single-form-group .current {
+.single-form-group .nice-select.open .list li:first-child,
+.company-info-form .nice-select.open .list li:first-child {
+    display: none;
+}
+
+.single-form-group .current,
+.company-info-form .current {
     font-weight: 700;
     color: #505050;
 }
@@ -347,10 +355,7 @@ img {
     margin-top: -20px;
     border-radius: 6px 6px 0px 0px;
     transition: .3s;
-}
-
-.single-textile-item:hover .textile-top {
-    background: #fff;
+    border-bottom: 1px solid #E1E1E1;
 }
 
 .single-textile-item {
@@ -647,6 +652,7 @@ img {
 .contact-modal input[type=submit] {
     margin-bottom: 0;
 }
+
 .quick-intro {
     text-align: left;
     margin-bottom: 25px;
@@ -864,7 +870,7 @@ img {
     color: #F26C4F;
 }
 
-.post-button .radio input[type="radio"]:checked ~ span::after {
+.post-button .radio input[type="radio"]:checked~span::after {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
     visibility: visible;
@@ -933,6 +939,17 @@ img {
     width: 100%;
     margin: 0;
     color: #686868;
+    transition: .3s;
+}
+
+.company-info-form .form-groups label span {
+    font-size: 10px;
+}
+
+.edit-profile-form .form-group input:focus,
+.company-info-form .form-group input:focus,
+.company-info-form .form-group .nice-select:focus {
+    border-color: #1176BB;
 }
 
 .edit-profile-form .form-group input[type=submit],
@@ -952,6 +969,7 @@ img {
 .company-info-form .form-group input[type=submit]:hover {
     background: #088844;
 }
+
 .delete-post:hover {
     background: #F37459;
     border-color: transparent;
@@ -1173,4 +1191,152 @@ img {
     font-size: 20px;
     margin-bottom: 25px;
     margin-top: 20px;
+}
+
+/* my account menu css */
+.my-account-list ul ul {
+    width: 200px;
+    text-align: left;
+    position: absolute;
+    right: 15px;
+    top: 90px;
+    background: #F5F5F5;
+    z-index: 9;
+    border-radius: 6px;
+    padding: 10px 0;
+    box-shadow: 0 0 10px #ddd;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.my-account {
+    position: relative;
+}
+
+.my-account-list li {
+    display: inline-block;
+}
+
+.my-account-list li li {
+    display: block;
+}
+
+.my-account-list ul ul a {
+    display: block;
+    color: #1F3B63;
+    padding: 5px 20px;
+    font-weight: 600;
+}
+
+.my-account-list ul ul a:hover {
+    color: #1176BB;
+    padding-left: 25px;
+}
+
+.my-account-list ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    top: 45px;
+}
+
+/* hamburger menu css */
+
+.hamburger-menu-trigger {
+    display: inline-block;
+    transform: translateY(7px);
+    margin-left: 25px;
+}
+
+.navigation__checkbox {
+    display: none;
+}
+
+.navigation__button {
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.navigation__icon {
+    position: relative;
+    margin-top: 5px;
+}
+
+.navigation__button {
+    margin: 0;
+}
+
+.navigation__icon,
+.navigation__icon::before,
+.navigation__icon::after {
+    width: 26px;
+    height: 3px;
+    background-color: #1176BB;
+    display: inline-block;
+}
+
+
+.navigation__icon::before,
+.navigation__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .1s;
+}
+
+.navigation__icon::before {
+    top: -10px;
+}
+
+.navigation__icon::after {
+    top: 10px;
+}
+
+.navigation__button:hover .navigation__icon:before {
+    top: -13px;
+}
+
+.navigation__button:hover .navigation__icon:after {
+    top: 13px;
+}
+
+.textile-innerpage-left.active {
+    left: 0px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.textile-innerpage-left .crossbars {
+    margin: 0;
+}
+
+.textile-innerpage-left .authore-details {
+    border-radius: 0;
+}
+
+.textile-innerpage-left .crossbars button::after,
+.textile-innerpage-left .crossbars button::before {
+    background: #fff;
+}
+
+.hamburger-menu-trigger {
+    display: none;
+}
+
+.textile-innerpage-left {
+    position: inherit;
+    width: auto;
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    left: 0;
+}
+
+.textile-innerpage-left .crossbars {
+    display: none;
+}
+
+.textile-innerpage-left.active .crossbars {
+    display: block;
 }

@@ -73,4 +73,13 @@
 		$(".overlay, .contact-modal").removeClass("active");
 	});
 
+	// hamburger menu active 
+	$(".hamburger-menu-trigger").on("click", function () {
+		$(".overlay, .textile-innerpage-left").addClass("active");
+	});
+
+	$(".overlay, .crossbars").on("click", function () {
+		$(".textile-innerpage-left, .overlay").removeClass("active");
+	});
+
 })(jQuery);
