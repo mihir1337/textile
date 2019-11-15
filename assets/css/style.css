@@ -133,12 +133,15 @@ img {
     background: #28A161;
 }
 
-.site-btn:hover {
+.site-btn:hover,
+.login-modal input[type=submit]:hover,
+.contact-modal input[type=submit]:hover {
     background: #014d7f;
     color: #fff;
 }
 
-.site-btn.reg-btn:hover {
+.site-btn.reg-btn:hover,
+.login-modal.register-modal input[type=submit]:hover {
     background: #069449;
 }
 
@@ -949,9 +952,17 @@ img {
     font-size: 10px;
 }
 
+.join-fb-button:hover {
+    background: #2f5098;
+}
+
 .edit-profile-form .form-group input:focus,
 .company-info-form .form-group input:focus,
-.company-info-form .form-group .nice-select:focus {
+.company-info-form .form-group .nice-select:focus,
+.login-modal input:focus,
+.contact-modal input:focus,
+.contact-modal textarea:focus,
+.login-modal textarea:focus {
     border-color: #1176BB;
 }
 
@@ -1386,4 +1397,8 @@ img {
 
 .payment-modal .single-payment-method .content {
     text-align: left;
+}
+
+.single-textile-item.all-post .textile-top {
+    border-bottom: 0;
 }
