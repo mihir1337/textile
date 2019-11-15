@@ -403,6 +403,7 @@ img {
 .textile-bottom span {
     color: #28A161;
     margin-left: 20px;
+    font-weight: 500;
 }
 
 .textile-bottom span i.fa {
