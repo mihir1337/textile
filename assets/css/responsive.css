@@ -303,6 +303,26 @@
 
 @media (max-width: 432px) {
 
+    .site-btn.login-btn {
+        float: none;
+        position: absolute;
+        top: -72px;
+        right: 10px;
+        padding: 14px 30px;
+    }
+
+    .header-area .site-btn.reg-btn {
+        float: none;
+        width: 100%;
+        font-weight: 800;
+        padding: 15px;
+    }
+
+    .header-area .site-logo {
+        float: left;
+        text-align: left;
+    }
+
     .header-area .col-lg-6.col-4,
     .header-area .col-lg-6.col-8 {
         max-width: 100% !important;
@@ -468,6 +488,30 @@
         height: 45px;
     }
 
+    .header-area .col-lg-6.col-12 .site-logo img {
+        width: 70%;
+    }
+
+    .header-area .col-lg-6.col-12 .site-logo {
+        margin: 0;
+        text-align: center;
+        display: inline-block;
+        transform: translateX(65px);
+    }
+
+    .hamburger-menu-trigger {
+        top: 11px;
+        left: -220px;
+    }
+
+    .header-area .col-lg-6.col-12 {
+        position: relative;
+    }
+
+    .back-to-home {
+        top: 6px;
+    }
+    
 }
 @media (max-width: 420px) {
     .cd-headline.clip span {
@@ -522,26 +566,6 @@
         margin-bottom: 10px;
     }
 
-    .header-area .site-logo {
-        float: left;
-        text-align: left;
-    }
-
-    .site-btn.login-btn {
-        float: none;
-        position: absolute;
-        top: -72px;
-        right: 10px;
-        padding: 14px 30px;
-    }
-
-    .header-area .site-btn.reg-btn {
-        float: none;
-        width: 100%;
-        font-weight: 800;
-        padding: 15px;
-    }
-
     .single-form-group .nice-select {
         height: 50px;
         line-height: 50px;
@@ -552,29 +576,6 @@
         line-height: 50px;
     }
 
-    .header-area .col-lg-6.col-12 .site-logo img {
-        width: 70%;
-    }
-
-    .header-area .col-lg-6.col-12 .site-logo {
-        margin: 0;
-        text-align: center;
-        display: inline-block;
-        transform: translateX(65px);
-    }
-
-    .hamburger-menu-trigger {
-        top: 11px;
-        left: -220px;
-    }
-
-    .header-area .col-lg-6.col-12 {
-        position: relative;
-    }
-
-    .back-to-home {
-        top: 6px;
-    }
 }
 
 @media (max-width: 370px) {
