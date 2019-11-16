@@ -1420,3 +1420,11 @@ img {
     content: "\ea6a";
     font-family: icoFont;
 }
+
+.cd-headline.clip .cd-words-wrapper::after {
+    width: 3px;
+}
+
+.cd-headline.clip span {
+    line-height: 1;
+}
