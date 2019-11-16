@@ -469,6 +469,18 @@
     }
 
 }
+@media (max-width: 420px) {
+    .cd-headline.clip span {
+        display: block;
+        text-align: center;
+    }
+
+    span.cd-words-wrapper {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+}
 
 @media (max-width: 390px) {
 
@@ -563,7 +575,6 @@
     .back-to-home {
         top: 6px;
     }
-
 }
 
 @media (max-width: 370px) {
@@ -627,17 +638,6 @@
     .header-area .col-lg-6.col-12 .site-logo {
         transform: translateX(42px);
     }
-    .cd-headline.clip span {
-        display: block;
-        text-align: center;
-    }
-
-    span.cd-words-wrapper {
-        text-align: center;
-        display: block;
-        margin: 0 auto;
-    }
-
     .contacts .single-textile-item.all-post ul li span:nth-child(3) {
         flex-basis: 78%;
     }
