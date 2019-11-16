@@ -681,7 +681,7 @@ img {
     margin-left: 50px;
 }
 
-.back-to-home i.fa {
+.back-to-home i {
     margin-right: 5px;
     font-weight: 700;
 }
@@ -1402,4 +1402,21 @@ img {
 
 .single-textile-item.all-post .textile-top {
     border-bottom: 0;
+}
+
+.nice-select:after {
+    border: transparent;
+    content: "\ea67";
+    font-family: icoFont;
+    transform: rotate(0deg) translateY(-50%);
+    width: auto;
+    height: auto;
+    margin: 0;
+    color: #505050
+}
+
+.nice-select.open:after {
+    transform: rotate(0deg) translateY(-50%);
+    content: "\ea6a";
+    font-family: icoFont;
 }
