@@ -368,11 +368,38 @@ img {
     padding: 20px;
     transition: .3s;
     background: #fff;
-}
-
-.single-textile-item {
+    transition: .3s;
     min-height: 421px;
     position: relative;
+}
+
+.single-textile-hover {
+    width: 0px;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 0 10px #ddd;
+    border-radius: 10px;
+    position: absolute;
+    right: -185px;
+    top: 0px;
+    height: 421px;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    width: 215px;
+    transition: .3s;
+}
+
+.single-textile-hover img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.single-textile-item:hover .single-textile-hover {
+    visibility: visible;
+    opacity: 1;
+    right: -215px;
 }
 
 .textile-bottom {
